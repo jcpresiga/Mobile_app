@@ -9,9 +9,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class RegistroEntradaActivity extends AppCompatActivity implements View.OnClickListener{
+
 
     EditText reidregistro, renroplaca, remarca, remodelo, recolor, refecha;
     Button btnregistrar;
@@ -31,6 +38,7 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
 
         btnregistrar.setOnClickListener(this);
     }
+
 
     public void onClick(View v){
         switch (v.getId()){
@@ -54,6 +62,7 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
         values.put(Utilidades.CAMPO_MARCA,remarca.getText().toString());
         values.put(Utilidades.CAMPO_MODELO,remodelo.getText().toString());
         values.put(Utilidades.CAMPO_COLOR,recolor.getText().toString());
+
         values.put(Utilidades.CAMPO_FECHA,refecha.getText().toString());
 
         Long idResultante=db.insert(Utilidades.TABLA_REGISTRO,Utilidades.CAMPO_ID,values);
