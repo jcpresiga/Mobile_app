@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_registro_celdas.xml" value="0.33" />
         <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_registro_entrada.xml" value="0.33" />
+        <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_registro_pagos.xml" value="0.33" />
+        <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_registro_salida.xml" value="0.33" />
+        <entry key="..\:/Users/JUAN C PRESIGA/AndroidStudioProjects/Mobile_app/app/src/main/res/layout/activity_registro_usuarios.xml" value="0.33" />
       </map>
     </option>
   </component>

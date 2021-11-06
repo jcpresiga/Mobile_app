@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_app">
         <activity
+            android:name=".RegistroUsuariosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroPagosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroCeldasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegistroSalidaActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegistroEntradaActivity"
             android:exported="true" />
         <activity
