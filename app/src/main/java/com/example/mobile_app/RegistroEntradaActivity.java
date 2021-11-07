@@ -19,7 +19,7 @@ import java.util.Locale;
 
 public class RegistroEntradaActivity extends AppCompatActivity implements View.OnClickListener{
 
-
+    //se inicializan los campos y boton que se utilizan
     EditText reidregistro, renroplaca, remarca, remodelo, recolor, refecha;
     Button btnregistrar;
 
@@ -42,6 +42,7 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
 
     public void onClick(View v){
         switch (v.getId()){
+            //funcionalidad del boton
             case R.id.btnregistrar:
                 registrarEntrada();
                 Toast.makeText(this,"Registro Guardado!",Toast.LENGTH_LONG).show();
@@ -52,6 +53,7 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
 
     }
 
+    //codigo para realizar el registro de los datos en la tabla
     private void registrarEntrada(){
         ConexionSQLiteHelper conn = new ConexionSQLiteHelper(this,"bd_parqueadero",null,1);
         SQLiteDatabase db = conn.getWritableDatabase();

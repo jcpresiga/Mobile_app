@@ -1,5 +1,6 @@
 package com.example.mobile_app;
 
+//se define los campos de la table
 public class Registro {
     private Integer id_registro;
     private String placa;
@@ -8,6 +9,7 @@ public class Registro {
     private String color;
     private String fecha;
 
+    //se define el constructor
     public Registro(Integer id_registro, String placa, String marca, String modelo, String color, String fecha) {
         this.id_registro = id_registro;
         this.placa = placa;
@@ -17,6 +19,7 @@ public class Registro {
         this.fecha = fecha;
     }
 
+    //getter y setter
     public Integer getId_registro() {
         return id_registro;
     }

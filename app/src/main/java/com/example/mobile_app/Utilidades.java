@@ -2,7 +2,7 @@ package com.example.mobile_app;
 
 public class Utilidades {
 
-    //constantes tabla registros
+    //constantes de tabla registros
     public static final String TABLA_REGISTRO="registros";
     public static final String CAMPO_ID="id_registro";
     public static final String CAMPO_PLACA="placa";

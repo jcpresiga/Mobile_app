@@ -10,10 +10,12 @@ public class ConexionSQLiteHelper extends SQLiteOpenHelper {
 
 
 
+    //constructor de SQLite
     public ConexionSQLiteHelper(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
+    //metodos create y upgrade de SQLite
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Utilidades.CREAR_TABLA_REGISTRO);
