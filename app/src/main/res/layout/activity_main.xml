@@ -26,7 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btnsalida"
+        android:id="@+id/btnSalidaVehiculos"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -43,7 +43,7 @@
         android:text="Gestion de Celdas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnsalida" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSalidaVehiculos" />
 
     <Button
         android:id="@+id/btnpagos"

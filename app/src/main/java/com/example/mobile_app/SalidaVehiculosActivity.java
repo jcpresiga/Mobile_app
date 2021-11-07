@@ -7,25 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class RegistroSalidaActivity extends AppCompatActivity implements View.OnClickListener{
+public class SalidaVehiculosActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnsaregresar;
+    Button btnsalidaregresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro_salida);
+        setContentView(R.layout.activity_salida_vehiculos);
 
-        btnsaregresar = findViewById(R.id.btnceregresar);
+        btnsalidaregresar = (Button) findViewById(R.id.btnSalidaRegresar);
 
-        btnsaregresar.setOnClickListener(this);
+        btnsalidaregresar.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnsaregresar:
-                Intent i = new Intent(RegistroSalidaActivity.this,MainActivity.class);
+            case R.id.btnSalidaRegresar:
+                Intent i = new Intent(SalidaVehiculosActivity.this,MainActivity.class);
                 startActivity(i);
                 finish();
                 break;
