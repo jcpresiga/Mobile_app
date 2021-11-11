@@ -9,6 +9,18 @@ public class Registro {
     private String color;
     private String fecha;
 
+    @Override
+    public String toString() {
+        return "Registro{" +
+                "id_registro=" + id_registro +
+                ", placa='" + placa + '\'' +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", color='" + color + '\'' +
+                ", fecha='" + fecha + '\'' +
+                '}';
+    }
+
     //se define el constructor
     public Registro(Integer id_registro, String placa, String marca, String modelo, String color, String fecha) {
         this.id_registro = id_registro;

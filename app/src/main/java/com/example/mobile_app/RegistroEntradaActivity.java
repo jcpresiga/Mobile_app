@@ -20,7 +20,7 @@ import java.util.Locale;
 public class RegistroEntradaActivity extends AppCompatActivity implements View.OnClickListener{
 
     //se inicializan los campos y boton que se utilizan
-    EditText reidregistro, renroplaca, remarca, remodelo, recolor, refecha;
+    EditText renroplaca, remarca, remodelo, recolor, refecha;
     Button btnregistrar;
 
     @Override
@@ -28,7 +28,6 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_entrada);
 
-        reidregistro = (EditText) findViewById(R.id.reidregistro);
         renroplaca = (EditText) findViewById(R.id.renroplaca);
         remarca = (EditText) findViewById(R.id.remarca);
         remodelo = (EditText) findViewById(R.id.remodelo);
@@ -59,17 +58,16 @@ public class RegistroEntradaActivity extends AppCompatActivity implements View.O
         SQLiteDatabase db = conn.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(Utilidades.CAMPO_ID,reidregistro.getText().toString());
         values.put(Utilidades.CAMPO_PLACA,renroplaca.getText().toString());
         values.put(Utilidades.CAMPO_MARCA,remarca.getText().toString());
         values.put(Utilidades.CAMPO_MODELO,remodelo.getText().toString());
         values.put(Utilidades.CAMPO_COLOR,recolor.getText().toString());
-
         values.put(Utilidades.CAMPO_FECHA,refecha.getText().toString());
 
         Long idResultante=db.insert(Utilidades.TABLA_REGISTRO,Utilidades.CAMPO_ID,values);
 
         Toast.makeText(getApplicationContext(),"Id Registro: "+idResultante,Toast.LENGTH_SHORT).show();
         db.close();
+
     }
 }

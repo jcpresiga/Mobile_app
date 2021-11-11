@@ -13,7 +13,7 @@ public class Utilidades {
 
 
     public static final String CREAR_TABLA_REGISTRO = "CREATE TABLE " +
-            ""+TABLA_REGISTRO+" ("+CAMPO_ID+" INTEGER, " +
+            ""+TABLA_REGISTRO+" ("+CAMPO_ID+" INTEGER PRIMARY KEY AUTOINCREMENT, " +
             ""+CAMPO_PLACA+" TEXT, "+CAMPO_MARCA+" TEXT, " +
             ""+CAMPO_MODELO+" TEXT, "+CAMPO_COLOR+" TEXT, "+CAMPO_FECHA+" TEXT)";
 }
