@@ -10,29 +10,74 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_app">
         <activity
-            android:name=".SalidaVehiculosActivity"
+            android:name=".RegistroEmpleadosActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true" />
         <activity
-            android:name=".RegistroUsuariosActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegistroPagosActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegistroCeldasActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RegistroEntradaActivity"
+            android:name=".RegistroEntradaSalidaActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".GestionClienteActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".CrearClienteActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+        android:exported="true"/>
+
+        <activity
+            android:name=".GestionCeldasActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".CrearCeldaActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".EditarCeldaActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".AsignarCeldaActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".ListarCeldaActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".EditarClienteActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".GestionPagosActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".PagarActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".ListarPagosActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true"/>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan|adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
     </application>
 
 </manifest>

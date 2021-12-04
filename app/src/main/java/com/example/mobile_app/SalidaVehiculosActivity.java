@@ -17,7 +17,6 @@ public class SalidaVehiculosActivity extends AppCompatActivity implements View.O
         setContentView(R.layout.activity_salida_vehiculos);
 
         btnsalidaregresar = (Button) findViewById(R.id.btnSalidaRegresar);
-
         btnsalidaregresar.setOnClickListener(this);
     }
 
